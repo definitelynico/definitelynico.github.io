@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffb4c7;
+    background-image: linear-gradient(-45deg, #ffc549 25%, transparent 25%, transparent 50%, #cccccc 50%, #cccccc 75%, transparent 75%, transparent 50%);
+    background-size: 100px 100px;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+}
+
+/* Style the header */
+.header {
+    text-align: center;
+    padding: 1vw 0;
+    font-family: 'Caveat', cursive;
+    /* Add spacing around the header text */
+}
+
+.header h1 {
+    /* Adjust the font size as needed */
+    background: linear-gradient(45deg,
+            #FFC0CB 20%,
+            #f0f0f0 50%);
+    background-size: 2px 2px;
+    /* Adjust the size for stripe thickness */
+    -webkit-background-clip: text;
+    /* Clip the text to the background gradient */
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* Style the containers */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+    background-color: #ffecdf8a;
+    margin: 5px 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.an-button-container {
+    width: 90%;
+    height: 600;
+    /* Remove fixed height */
+    /* background-color: #ffc549; */
+    display: flex;
+    flex-direction: column;
+    /* Change to column direction */
+    align-items: center;
+    margin-top: 30px;
+}
+
+.an-button {
+    font-family: 'Caveat', cursive;
+    font-size: 300%;
+    text-align: center;
+    background-color: #f0f0f0;
+    background: linear-gradient(-45deg,
+            #FFC0CB 20%,
+            #f0f0f0 50%);
+    background-size: 5px 5px;
+    width: 100%;
+    /* Set button width to 80% of the container */
+    height: 100%;
+
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
+    /* Add some spacing between buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* Remove default link underline */
+    color: #fda0bf;
+    /* Text color */
+    font-weight: bold;
+    /* Optional: Add font weight */
+    border: none;
+    /* Optional: Remove border */
+    cursor: pointer;
+    /* Optional: Add pointer cursor */
+}
+
+.an-button:hover {
+    color: #fadce5;
+    background: linear-gradient(45deg,
+            #aa767f 20%,
+            #d3c6c6 50%);
+    background-size: 5px 5px;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+
+    /* Add your desktop-specific styles here */
+    .header h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+
+    /* Add your mobile-specific styles here */
+    .header h1 {
+        font-size: 15vw;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}
